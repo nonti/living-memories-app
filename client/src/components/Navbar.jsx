@@ -5,11 +5,22 @@ import { HiOutlineHome } from "react-icons/hi";
 import { GrPlan } from "react-icons/gr";
 import { RiContactsLine } from "react-icons/ri";
 import { TfiGallery } from "react-icons/tfi";
-import { FcAbout } from "react-icons/fc";
+import { MdKeyboardArrowDown } from "react-icons/md";
+
 import { useState } from "react";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+  // const [isMobileCategoryOpen, setIsMobileCategoryOpen] = useState(false);
+  // const navigate = useNavigate();
+  const handleMouseEnter = () => {
+    setIsOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsOpen(false);
+  };
+
 
   return (
   <>
@@ -41,16 +52,42 @@ const Navbar = () => {
       </Link>
     </li>
     <li>
-      <Link
-        to="/stanzar"
-        className="text-gray-900 dark:text-yellow-500 hover:text-blue-700"
-      >
-        Plans
-      </Link>
+       <li className="relative">
+        <button
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+          className="flex gap-2 items-center justify-between w-full py-2 px-3 text-amber-300 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-amber-300 md:p-0 md:w-auto  md:dark:hover:text-amber-300 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
+            Plans
+          <MdKeyboardArrowDown className="text-amber-300"/>
+        </button>
+                {isOpen && (
+                  <div className="absolute top-full left-0 z-10 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600"
+                    onMouseEnter={handleMouseEnter} 
+                    onMouseLeave={handleMouseLeave} 
+                  >
+                    <ul className="py-2 text-sm text-gray-700 dark:text-gray-200"
+                      aria-labelledby="dropdownLargeButton"
+                    >
+                      
+                      <li>
+                        <Link to="/plan/premium" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-amber-300">
+                          Premium
+                        </Link>
+                      </li>
+
+                      <li>
+                        <Link to="/plan/standard" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-amber-300">
+                          Standard
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                )}
+              </li>
     </li>
     <li>
       <Link
-        to="/tokens"
+        to="/gallery"
         className="text-gray-900 dark:text-yellow-500 hover:text-blue-700"
       >
         Gallery
@@ -58,7 +95,7 @@ const Navbar = () => {
     </li>
     <li>
       <Link
-        to="/tokens"
+        to="/contacts"
         className="text-gray-900 dark:text-yellow-500 hover:text-blue-700"
       >
         Contacts

@@ -11,10 +11,10 @@ const Hero = () => {
                     <div className="space-y-4">
                         <div className="space-y-2">
                             <h1 className="text-5xl font-bold tracking-normal text-white sm:text-5xl md:text-6xl">
-                                <span className="sm:text-5xl">Memories that{" "}
+                                <span className="sm:text-5xl text-transparent uppercase bg-clip-text bg-gradient-to-r from-blue-600 to-amber-300">Memories that{" "}
                                 </span> 
                                 <span
-                                    className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-blue-600">Last Forever
+                                    className="font-extrabold text-transparent uppercase bg-clip-text bg-gradient-to-r from-amber-400 to-blue-600">Last Forever
                                 </span>
                                 <br/>
                             </h1>

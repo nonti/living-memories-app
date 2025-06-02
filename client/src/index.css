@@ -5,3 +5,22 @@
   @apply bg-[url('/src/assets/background.jpg')] bg-no-repeat bg-cover bg-center bg-fixed
   }
 }
+
+
+
+@layer components {
+  .rgb-button {
+    background: linear-gradient(45deg, #6100cf, #c0a555);
+    background-size: 600% 600%;
+    animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+}
+
