@@ -3,6 +3,7 @@ import Home from "./pages/Home"
 import Layout from "./components/Layout"
 import About from "./pages/About"
 import Plans from "./pages/Plans"
+import Gallery from "./pages/Gallery"
 
 const App = () => {
 
@@ -23,6 +24,11 @@ const App = () => {
         <Route path='/plan' element={ 
           <Layout>
             <Plans/>
+          </Layout>
+        }/>
+        <Route path='/gallery' element={ 
+          <Layout>
+            <Gallery/>
           </Layout>
         }/>
      </Routes>
