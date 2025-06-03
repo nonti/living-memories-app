@@ -2,6 +2,9 @@ import Hero from './Hero'
 import About from './About'
 import Plans from './Plans'
 import Gallery from './Gallery'
+import Team from './Team'
+import Contacts from './Contacts'
+import Testimonial from './Testimonial'
 
 
 const Home = () => {
@@ -12,6 +15,9 @@ const Home = () => {
       <About/>
       <Plans/>
       <Gallery/>
+      <Team/>
+      <Contacts/>
+      <Testimonial/>
     </section>
   )
 }

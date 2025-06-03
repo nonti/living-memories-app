@@ -24,3 +24,39 @@
 
 }
 
+@layer components {
+  @keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scrollReverse {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Custom Animation Classes */
+.animate-scroll {
+  animation: scroll 60s linear infinite; /* Adjust duration as needed */
+}
+
+.animate-scrollReverse {
+  animation: scrollReverse 60s linear infinite; /* Adjust duration as needed */
+}
+
+/* Add a class to pause the animation on hover if you need it */
+/* This is an alternative to Tailwind's hover:[animation-play-state:paused] */
+/* If you keep the Tailwind utility, you don't strictly need this. */
+.animate-paused-on-hover:hover {
+  animation-play-state: paused;
+}
+
+}

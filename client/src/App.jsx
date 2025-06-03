@@ -4,6 +4,7 @@ import Layout from "./components/Layout"
 import About from "./pages/About"
 import Plans from "./pages/Plans"
 import Gallery from "./pages/Gallery"
+import Contacts from "./pages/Contacts"
 
 const App = () => {
 
@@ -29,6 +30,11 @@ const App = () => {
         <Route path='/gallery' element={ 
           <Layout>
             <Gallery/>
+          </Layout>
+        }/>
+        <Route path='/contacts' element={ 
+          <Layout>
+            <Contacts/>
           </Layout>
         }/>
      </Routes>
