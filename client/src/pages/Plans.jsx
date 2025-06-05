@@ -13,14 +13,14 @@ const Plans = () => {
       <div className='absolute hidden w-full bg-gray-50 lg:block h-96' />
       <div className='relative px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-6xl md:px-24 lg:px-8 lg:py-20'>
         <div className='max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12'>
-          <h2 className='max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto'>
+          <h2 className='max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight xl:text-gray-900 text-white sm:text-4xl md:mx-auto'>
             <span className='relative inline-block'>
              
               <span className='relative'>Affordable</span>
             </span>{' '}
             for everyone
           </h2>
-          <p className='text-base text-gray-700 md:text-lg'>
+          <p className='text-base xl:text-gray-900 text-white md:text-lg'>
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque rem aperiam, eaque ipsa quae.
           </p>
@@ -52,7 +52,7 @@ const Plans = () => {
         <div className='grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 max-w-screen-xl mx-auto'>
         {currentPlans.map((plan) => (
           <div key={plan.id}>
-            <div className='p-8 bg-gray-900 rounded'>
+            <div className='p-8 bg-black/15 backdrop-blur-lg border-amber-300 border rounded-2xl'>
               <div className='mb-4 text-center'>
                 <p className='text-xl font-medium tracking-wide text-white mb-3'>
                   {plan.title}
@@ -77,7 +77,7 @@ const Plans = () => {
               <div className='flex justify-center'>
                 <button
                   type='submit'
-                  className='inline-flex items-center justify-center w-full h-12 rgb-button bg-gradient-to-r from-blue-500 to-amber-500 text-white px-8 py-2 text-xl rounded font-medium focus:ring ring-black ring-opacity-10 gradient element-to-rotate'
+                  className='inline-flex items-center justify-center w-full h-12 rgb-button bg-gradient-to-r from-indigo-800 to-amber-500 text-white px-8 py-2 text-xl rounded font-medium focus:ring ring-black ring-opacity-10 gradient element-to-rotate'
                 >
                   Join Plan
                 </button>

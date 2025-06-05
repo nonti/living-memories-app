@@ -9,8 +9,7 @@ import Testimonial from './Testimonial'
 
 const Home = () => {
   return (
-    <section className=''>
-      
+    <section className=''>      
       <Hero/>
       <About/>
       <Plans/>

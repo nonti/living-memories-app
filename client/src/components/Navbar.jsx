@@ -78,6 +78,12 @@ const Navbar = () => {
           <li>
             <Link to='/contacts' className='text-gray-900 dark:text-yellow-500 hover:text-blue-700'>Contacts</Link>
           </li>
+           <li>
+            <Link to='/team' className='text-gray-900 dark:text-yellow-500 hover:text-blue-700'>Team</Link>
+          </li>
+           <li>
+            <Link to='/testimonial' className='text-gray-900 dark:text-yellow-500 hover:text-blue-700'>Testimonial</Link>
+          </li>
         </ul>
 
         {/* Profile/Login Button (Always visible) */}
@@ -87,7 +93,7 @@ const Navbar = () => {
               {isLoggedIn ? (
                 <img className='w-8 h-8 rounded-full' src={profile} alt='User Profile' />
               ) : (
-                <FiLogIn className='w-8 h-8 p-1 rounded-full text-white' /> // Login Icon
+                <FiLogIn className='w-8 h-8 p-1 rounded-full text-white' /> 
               )}
             </button>
 

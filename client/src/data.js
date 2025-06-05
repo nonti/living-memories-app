@@ -207,7 +207,7 @@ export const locationsData = [
         office: "Branch",
         name: "Giyani",
         addressLine1: "Office No.10, Malamulele Main Road",
-        addressLine2: "Tiveka Bukuta Complex Opposite Masingita Garage,",
+        addressLine2: "Tiveka Bukuta Complex ,",
         postal: "P O Box 1121, Giyani,0826",
         phone: "015 812 0830"
     },
@@ -218,16 +218,16 @@ export const locationsData = [
         addressLine1: "Office No.03",
         addressLine2: "Next To Malamulele Hospital",
         postal: "P O Box 14, Malamulele,0982",
-        phone: "073 491 5017/ 060 673 9340"
+        phone: "060 673 9340"
     },
     {
         id: 4,
         office: "Branch",
         name: "Bushbuckridge",
-        addressLine1: "Office No. 4, Stand No.303, Main Road",
+        addressLine1: "Office No. 4, Main Road",
         addressLine2: "Vaxumi Center",
         postal: "P O Box 14, Thulamahashe,0982",
-        phone: "060 763 8139/ 071 063 4377"
+        phone: "071 063 4377"
     }
 ];
 
@@ -322,3 +322,5 @@ export const testimonialsData = [
         socialLink: "#"
     }
 ];
+
+export const aboutText =  "LMFS Offers you a range of products that are meant to assist you or your family in an event of death. We aspire to ensure funeral services be conducted in a dignified manner, that brings peace and comfort to the bereaved families. Funeral costs escalate almost every day. It is imperative that we always prepare ourselves in case of this eventuality. LMFS wants to make it possible for you to or your loved ones to pass through this passage of grief without incurring financial loss. Waiting period shall be 3 months if the main member is not coming from another society and no waiting period if from another society. All financial policies have 6 months waiting period for all accidental deaths."
