@@ -1,0 +1,40 @@
+import React from 'react';
+import { MdOutlineDashboard } from 'react-icons/md';
+import { FaRegUserCircle } from 'react-icons/fa';
+import { GrGroup, GrTransaction, GrPerformance } from 'react-icons/gr';
+
+const Sidebar = () => {
+  return (
+    <div className='bg-slate-800 text-white px-4 fixed h-screen w-16 md:w-64 border-r border-gray-300'>
+      {/* Show title only on md and up */}
+      <h1 className='text-2xl font-bold hidden md:block mt-4 italic text-center'>
+        Living Memories
+      </h1>
+
+      <ul className='flex flex-col mt-5 text-xl'>
+        <li className='flex items-center py-3 px-2 space-x-4 hover:rounded-b-2xl hover:cursor-pointer hover:bg-amber-300 hover:text-white'>
+          <MdOutlineDashboard />
+          <span className='hidden md:inline'>Dashboard</span>
+        </li>
+        <li className='flex items-center py-3 px-2 space-x-4 hover:rounded-t-2xl hover:cursor-pointer hover:bg-amber-300 hover:text-white'>
+          <FaRegUserCircle />
+          <span className='hidden md:inline'>Profile</span>
+        </li>
+        <li className='flex items-center py-3 px-2 space-x-4 hover:rounded-b-2xl hover:cursor-pointer hover:bg-amber-300 hover:text-white'>
+          <GrGroup />
+          <span className='hidden md:inline'>Members</span>
+        </li>
+        <li className='flex items-center py-3 px-2 space-x-4 hover:rounded-t-2xl hover:cursor-pointer hover:bg-amber-300 hover:text-white'>
+          <GrTransaction />
+          <span className='hidden md:inline'>Transactions</span>
+        </li>
+        <li className='flex items-center py-3 px-2 space-x-4 hover:rounded hover:cursor-pointer hover:bg-amber-300 hover:text-white'>
+          <GrPerformance />
+          <span className='hidden md:inline'>Settings</span>
+        </li>
+      </ul>
+    </div>
+  );
+};
+
+export default Sidebar;
