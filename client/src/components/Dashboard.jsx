@@ -7,11 +7,11 @@ const Dashboard = () => {
   return (
     <div className='flex'>
       <Sidebar/>
-      <div>
+      <div className='grow ml-16 md:ml-64'>
         <HeaderNav/>
-      </div>
-      <div>
-        <MemberForm/>
+        <div className='px-8'>
+         <MemberForm/>
+        </div>
       </div>
     </div>
   )

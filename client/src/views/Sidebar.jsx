@@ -13,23 +13,33 @@ const Sidebar = () => {
 
       <ul className='flex flex-col mt-5 text-xl'>
         <li className='flex items-center py-3 px-2 space-x-4 hover:rounded-b-2xl hover:cursor-pointer hover:bg-amber-300 hover:text-white'>
+          <div>
           <MdOutlineDashboard />
+          </div>
           <span className='hidden md:inline'>Dashboard</span>
         </li>
         <li className='flex items-center py-3 px-2 space-x-4 hover:rounded-t-2xl hover:cursor-pointer hover:bg-amber-300 hover:text-white'>
+          <div>
           <FaRegUserCircle />
+          </div>
           <span className='hidden md:inline'>Profile</span>
         </li>
         <li className='flex items-center py-3 px-2 space-x-4 hover:rounded-b-2xl hover:cursor-pointer hover:bg-amber-300 hover:text-white'>
+          <div>
           <GrGroup />
+          </div>
           <span className='hidden md:inline'>Members</span>
         </li>
         <li className='flex items-center py-3 px-2 space-x-4 hover:rounded-t-2xl hover:cursor-pointer hover:bg-amber-300 hover:text-white'>
+          <div>
           <GrTransaction />
+          </div>
           <span className='hidden md:inline'>Transactions</span>
         </li>
         <li className='flex items-center py-3 px-2 space-x-4 hover:rounded hover:cursor-pointer hover:bg-amber-300 hover:text-white'>
+          <div>
           <GrPerformance />
+          </div>
           <span className='hidden md:inline'>Settings</span>
         </li>
       </ul>

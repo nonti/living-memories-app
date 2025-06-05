@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaRegCircleUser } from "react-icons/fa6";
 
 const MemberForm = () => {
-  const [showForm, setShowForm] = useState(false); // State to toggle form visibility
+  const [showForm, setShowForm] = useState(false); 
 
   return (
     <div>
