@@ -9,6 +9,7 @@ import Team from './pages/Team'
 import Testimonial from './pages/Testimonial'
 import Login from './pages/auth/Login'
 import Dashboard from './components/Dashboard'
+import AppLayout from './views/AppLayout'
 
 const App = () => {
 
@@ -16,7 +17,9 @@ const App = () => {
     <>
      <Routes>
       <Route path='/login' element={<Login/>}/>
-        <Route path='/dashboard' element={<Dashboard/>}/>
+        <Route path='/dashboard' element={
+            <Dashboard/>
+          }/>
         <Route path='/' element={ 
           <Layout>
             <Home/>

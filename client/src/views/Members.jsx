@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { FaRegCircleUser } from "react-icons/fa6";
-
-const MemberForm = () => {
+import { CiEdit,CiTrash,CiCalendarDate } from "react-icons/ci";
+import { GoNumber } from "react-icons/go";
+const Members = () => {
   const [showForm, setShowForm] = useState(false); 
 
   return (
@@ -24,6 +25,7 @@ const MemberForm = () => {
                 <th scope="col" className="px-6 py-3">Fullname</th>
                 <th scope="col" className="px-6 py-3">Surname</th>
                 <th scope="col" className="px-6 py-3">ID Number</th>
+                <th scope="col" className="px-6 py-3">Date of birth</th>
                 <th scope="col" className="px-6 py-3">Status</th>
                 <th scope="col" className="px-6 py-3">Action</th>
               </tr>
@@ -33,9 +35,11 @@ const MemberForm = () => {
                 <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">John</th>
                 <td className="px-6 py-4">Doe</td>
                 <td className="px-6 py-4">78001102015301</td>
+                <td className="px-6 py-4">1978/00/01</td>
                 <td className="px-6 py-4">Alive</td>
-                <td className="px-6 py-4">
-                  <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                <td className="px-6 py-4 flex gap-2">
+                  <a href="#" className="font-medium text-lg text-green-600 dark:text-green-500 hover:underline"><CiEdit/></a>
+                  <a href="#" className="font-medium text-lg text-red-600 dark:text-red-500 hover:underline"><CiTrash/></a>
                 </td>
               </tr>
               {/* Add other rows here */}
@@ -69,11 +73,21 @@ const MemberForm = () => {
           </div>
           <div className="flex">
             <span className="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border border-e-0 border-gray-300 rounded-s-md dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600">
-              <FaRegCircleUser />
+              <GoNumber />
             </span>
             <input
               type="text"
               placeholder="ID Number"
+              className="rounded-none rounded-e-lg bg-gray-50 border border-gray-300 text-gray-900 block flex-1 w-full text-sm p-2.5"
+            />
+          </div>
+          <div className="flex">
+            <span className="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border border-e-0 border-gray-300 rounded-s-md dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600">
+              <CiCalendarDate />
+            </span>
+            <input
+              type="date"
+              placeholder="Date of bith: YYYY/MM/DD"
               className="rounded-none rounded-e-lg bg-gray-50 border border-gray-300 text-gray-900 block flex-1 w-full text-sm p-2.5"
             />
           </div>
@@ -89,4 +103,4 @@ const MemberForm = () => {
   );
 };
 
-export default MemberForm;
+export default Members;
