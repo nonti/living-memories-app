@@ -1,4 +1,4 @@
-import TestimonialCard from "./TestimonialCard";
+import TestimonialCard from './TestimonialCard';
 
 const Marquee = ({ direction = 'normal', testimonials }) => {
     const animationClass = direction === 'normal' ? 'animate-scroll' : 'animate-scrollReverse';

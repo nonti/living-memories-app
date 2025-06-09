@@ -18,7 +18,7 @@ const TestimonialCard = ({ testimonial }) => {
                 </div>
                 <div className='w-[1px] bg-white/10 dark:bg-black/20'></div>
                 <div className='flex items-center justify-center max-w-full mx-auto'>
-                    <a target='_blank' href={testimonial.socialLink} rel="noopener noreferrer">
+                    <a target='_blank' href={testimonial.socialLink} rel='noopener noreferrer'>
                        
                     </a>
                 </div>

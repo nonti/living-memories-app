@@ -14,10 +14,10 @@ const Testimonial = () => {
                 </div>
                 <div className='flex flex-col gap-3'>
                     {/* Top Row: Scrolls right to left */}
-                    <Marquee direction="normal" testimonials={firstRowTestimonials} />
+                    <Marquee direction='normal' testimonials={firstRowTestimonials} />
 
                     {/* Bottom Row: Scrolls left to right */}
-                    <Marquee direction="scrollReverse" testimonials={secondRowTestimonials} />
+                    <Marquee direction='scrollReverse' testimonials={secondRowTestimonials} />
                 </div>
             </div>
         </section>

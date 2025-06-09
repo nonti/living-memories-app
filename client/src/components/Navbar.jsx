@@ -14,8 +14,8 @@ const Navbar = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isPlansDropdownOpen, setIsPlansDropdownOpen] = useState(false);
   const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
-  const userName = "Bonnie Green"; // Mock user data
-  const userEmail = "name@mail.com";
+  const userName = 'Bonnie Green'; // Mock user data
+  const userEmail = 'name@mail.com';
   
   
   const handlePlansMouseEnter = () => {
