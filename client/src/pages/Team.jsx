@@ -12,7 +12,7 @@ const Team = () => {
 
     const currentTeam = teamMembersData[selectedCategory] || []; 
   return (
-  <section className='bg-white dark:bg-gray-900'>
+  <section className='bg-white dark:bg-gray-900' id='team'>
             <div className='container px-6 py-10 mx-auto max-w-6xl'>
                 <h1 className='text-2xl font-semibold text-center text-amber-300 capitalize lg:text-3xl'>our team</h1>
 

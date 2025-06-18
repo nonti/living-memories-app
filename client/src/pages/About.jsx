@@ -10,7 +10,7 @@ const About = () => {
 
 	const shortText = aboutText.substring(0, 180) + '...';
   return (
-		 <section>
+		 <section id='about'>
       <div className='pt-10'>
         <div className='gap-16 items-center bg-black/15 rounded-r-lg backdrop-blur-sm  px-8 mx-auto max-w-6xl lg:grid lg:grid-cols-2 lg:py-8 lg:px-4'>
           <div className='font-light text-gray-500 sm:text-lg dark:text-gray-400'>
@@ -33,8 +33,8 @@ const About = () => {
               alt='office content 1'
             />
             <img
-              className='mt-4 w-full lg:mt-10 rounded-lg hover:translate-1/2 ease-in-out'
-              src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png'
+              className='mt-4 w-full lg:mt-10 rounded-lg hover:rotate-12'
+              src='https://scontent-jnb2-1.xx.fbcdn.net/v/t39.30808-6/498586625_1902359533901705_1494575735667969237_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=s4-44GZgCt8Q7kNvwFegLH2&_nc_oc=AdkwrYNkNxHEGSlLFGR-ja8D_b4lHFKl6LcppIdspjMFHM69Zd8HCE9ZpgcPal5S61E&_nc_zt=23&_nc_ht=scontent-jnb2-1.xx&_nc_gid=1u5cpXuPKjReVpRgV9wvLw&oh=00_AfPXy53rhqVM-HxPIfN6qUthkBzurEfCy9aEXR3_65lj7Q&oe=684C8C5D'
               alt='office content 2'
             />
           </div>

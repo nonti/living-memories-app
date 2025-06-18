@@ -4,7 +4,7 @@ import LocationCard from '../components/LocationCard';
 const Contacts = () => {
 
   return (
-    <section className=''>
+    <section id='contacts' className=''>
   <div className='container flex flex-col justify-center items-center mx-auto max-w-6xl bg-black/15 rounded-r-lg backdrop-blur-sm py-4 px-4 sm:px-6 lg:px-8'>
     {/* Header */}
     <div className='flex flex-col justify-center items-center text-center'>

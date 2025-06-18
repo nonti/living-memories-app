@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import Sidebar from '../views/Sidebar';
-import HeaderNav from '../views/HeaderNav'
 import Members from '../views/Members';
 import Transactions from '../views/Transactions';
 import Profile from '../views/Profile';
 import Settings from '../views/Settings';
+import Main from '../views/Main';
 const Dashboard = () => {
   const [view, setView] = useState('profile'); // default view
 
@@ -15,11 +15,11 @@ const Dashboard = () => {
   const showDashboard = () => setView('dashboard')
 
   return (
-    <div className='flex'>
+    <div className='flex bg-slate-900'>
       <Sidebar onDashboardClick={showDashboard} onProfileClick={showProfile} onTransactionsClick={showTransactions} onMembersClick={showMembers} onSettingsClick={showSettings}/>
-      <div className='grow ml-16 md:ml-64'>
-        <HeaderNav />
-        <div className='px-8'>
+      <div className='grow'>
+        <div className=''>
+          {view === 'dashboard' && <Main/>}
           {view === 'profile' && <Profile />}
           {view === 'transactions' && <Transactions />}
           {view === 'members' && <Members/>}

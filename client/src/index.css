@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+
+  html {
+  scroll-behavior: smooth;
+}
+
+
 @layer{
   section{
   @apply bg-[url('/src/assets/background.jpg')] bg-no-repeat bg-cover bg-center bg-fixed
@@ -60,3 +66,4 @@
 }
 
 }
+

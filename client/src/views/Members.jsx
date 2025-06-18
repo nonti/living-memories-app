@@ -6,14 +6,14 @@ const Members = () => {
   const [showForm, setShowForm] = useState(false); 
 
   return (
-    <div>
-      <h1 className='text-2xl text-center mb-4'>Members</h1>
+    <div className='p-4'>
+      <h1 className='text-2xl text-center mb-4 text-white p-3'>Beneficiaries</h1>
 
       <button
         onClick={() => setShowForm(true)}
-        className='inline-flex items-center justify-center w-46 h-12 rgb-button bg-gradient-to-r from-indigo-800 to-amber-400 text-white px-8 py-2 text-xl rounded font-medium focus:ring ring-black ring-opacity-10 gradient element-to-rotate'
+        className='inline-flex items-center justify-center w-64 h-12 rgb-button bg-gradient-to-r from-indigo-800 to-amber-400 text-white px-8 py-2 text-xl rounded font-medium focus:ring ring-black ring-opacity-10 gradient element-to-rotate'
       >
-        New Member
+        Add Beneficiary
       </button>
 
       {/* TABLE (Hidden when showForm is true) */}

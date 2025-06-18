@@ -8,16 +8,26 @@ import { TfiGallery } from 'react-icons/tfi';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import { FiLogIn } from 'react-icons/fi';
 
-import { useState } from 'react';
+import { useEffect, useState,  } from 'react';
 
 const Navbar = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isPlansDropdownOpen, setIsPlansDropdownOpen] = useState(false);
   const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const userName = 'Bonnie Green'; // Mock user data
   const userEmail = 'name@mail.com';
-  
-  
+ 
+ 
+  useEffect(()=> {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll')
+  },[])
+
   const handlePlansMouseEnter = () => {
     setIsPlansDropdownOpen(true);
   };
@@ -39,7 +49,10 @@ const Navbar = () => {
 
   return (
      <>
-      <nav className='fixed top-0  left-0 w-full z-50 h-16 flex items-center justify-between px-4 bg-black/15  backdrop-blur-sm md:top-10 md:left-1/2 md:-translate-x-1/2 md:max-w-7xl md:w-11/12 md:rounded-full shadow-lg shadow-amber-300/50'>
+      <nav className={`fixed top-0 left-0 w-full z-50 h-16 flex items-center justify-between px-4
+    ${isScrolled ? 'bg-gray-500' : 'bg-black/15'}
+    backdrop-blur-sm shadow-lg shadow-amber-300/50
+    md:top-10 md:left-1/2 md:-translate-x-1/2 md:max-w-7xl md:w-11/12 md:rounded-full`}>
         {/* Logo (Always visible) */}
         <div className='flex items-center'>
           <Link to='/' className='flex items-center'>
@@ -50,10 +63,10 @@ const Navbar = () => {
         {/* Nav Links (Visible on md and up) */}
         <ul className='hidden md:flex md:space-x-8 md:items-center font-medium'>
           <li>
-            <Link to='/' className='text-blue-700 dark:text-yellow-500 hover:underline'> Home</Link>
+            <a href="/"><Link to='/' className='text-blue-700 dark:text-yellow-500 hover:underline'> Home</Link></a>
           </li>
           <li>
-            <Link to='/shops' className='text-gray-900 dark:text-yellow-500 hover:text-blue-700'>About</Link>
+            <a href='#about' className='text-gray-900 dark:text-yellow-500 hover:text-blue-700'>About</a>
           </li>
           <li className='relative'>
             <button onMouseEnter={handlePlansMouseEnter} onMouseLeave={handlePlansMouseLeave} className='flex gap-2 items-center justify-between w-full py-2 px-3 text-amber-300 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-amber-300 md:p-0 md:w-auto  md:dark:hover:text-amber-300 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent'>Plans
@@ -63,26 +76,26 @@ const Navbar = () => {
                 <div className='absolute top-full left-0 z-10 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600' onMouseEnter={handlePlansMouseEnter}onMouseLeave={handlePlansMouseLeave}>
                   <ul className='py-2 text-sm text-gray-700 dark:text-gray-200' aria-labelledby='dropdownLargeButton'>
                     <li>
-                      <Link to='/plan/premium' className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-amber-300'>Premium</Link>
+                      <a href='#plans' className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-amber-300'>Premium</a>
                     </li>
                     <li>
-                      <Link to='/plan/standard' className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-amber-300'>Standard</Link>
+                      <a href='#plans' className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-amber-300'>Standard</a>
                     </li>
                   </ul>
                 </div>
                 )}      
           </li>
           <li>
-            <Link to='/gallery' className='text-gray-900 dark:text-yellow-500 hover:text-blue-700'>Gallery</Link>
+            <a href='#gallery' className='text-gray-900 dark:text-yellow-500 hover:text-blue-700'>Gallery</a>
           </li>
           <li>
-            <Link to='/contacts' className='text-gray-900 dark:text-yellow-500 hover:text-blue-700'>Contacts</Link>
+            <a href='#contacts' className='text-gray-900 dark:text-yellow-500 hover:text-blue-700'>Contacts</a>
           </li>
            <li>
-            <Link to='/team' className='text-gray-900 dark:text-yellow-500 hover:text-blue-700'>Team</Link>
+            <a  href='#team' className='text-gray-900 dark:text-yellow-500 hover:text-blue-700'>Team</a>
           </li>
            <li>
-            <Link to='/testimonial' className='text-gray-900 dark:text-yellow-500 hover:text-blue-700'>Testimonial</Link>
+            <a href='#testimonial' className='text-gray-900 dark:text-yellow-500 hover:text-blue-700'>Testimonial</a>
           </li>
         </ul>
 

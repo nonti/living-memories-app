@@ -51,7 +51,7 @@ const App = () => {
             <Testimonial/>
           </Layout>
         }/>
-        <Route path='/dashboard' element={<Dashboard/>}/>
+        <Route path='/admin/dashboard' element={<Dashboard/>}/>
      </Routes>
     </>
   )

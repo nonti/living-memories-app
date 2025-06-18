@@ -30,7 +30,7 @@ const Modal = ({ onClose }) => {
             </div>
 
             <div className='col-span-2'>
-              <label for='phone-input_billing_modal' className='mb-2 block text-sm font-medium text-gray-900 dark:text-white'> Phone Number* </label>
+              <label for='phone-input_billing_modal' className='mb-2 block text-sm font-medium text-gray-900 dark:text-white'> Phone Number</label>
               <div className='flex items-center'>
                 <button id='dropdown_phone_input__button_billing_modal' data-dropdown-toggle='dropdown_phone_input_billing_modal' className='z-10 inline-flex shrink-0 items-center rounded-s-lg border border-gray-300 bg-gray-100 px-4 py-2.5 text-center text-sm font-medium text-gray-900 hover:bg-gray-200 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-700' type='button'>
                  
@@ -49,10 +49,10 @@ const Modal = ({ onClose }) => {
             </div>
               <div className='col-span-2 sm:col-span-1'>
               <div className='mb-2 flex items-center gap-2'>
-                <label for='select_city_input_billing_modal' className='block text-sm font-medium text-gray-900 dark:text-white'> City* </label>
+                <label for='select_city_input_billing_modal' className='block text-sm font-medium text-gray-900 dark:text-white'> City </label>
               </div>
               <select id='select_city_input_billing_modal' placeholder='City' className='block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500'>
-                <option selected ></option>
+                <option selected >Select</option>
                 <option value='NY'>New York</option>
                 <option value='LA'>Los Angeles</option>
                 <option value='CH'>Chicago</option>
@@ -85,8 +85,8 @@ const Modal = ({ onClose }) => {
 
           </div>
           <div className='border-t gap-2 flex border-gray-200 pt-4 dark:border-gray-700 md:pt-5'>
-            <button type='submit' className='inline-flex items-center justify-center  h-12 rgb-button bg-gradient-to-r from-indigo-800 to-amber-400 text-white px-8 py-2 text-xl rounded font-medium focus:ring ring-black ring-opacity-10 gradient element-to-rotate '>Save information</button>
-            <button type='reset' onClick={onClose} className='inline-flex items-center justify-center  h-12 rgb-button bg-gradient-to-r from-indigo-800 to-amber-400 text-white px-8 py-2 text-xl rounded font-medium focus:ring ring-black ring-opacity-10 gradient element-to-rotate '>Cancel</button>
+            <button type='submit' className='inline-flex items-center justify-center  h-12 rgb-button bg-gradient-to-r from-indigo-800 to-amber-400 text-white px-8 py-2 text-xl rounded font-medium focus:ring ring-black ring-opacity-10 gradient element-to-rotate w-full'>Save </button>
+            <button type='reset' onClick={onClose} className='inline-flex items-center justify-center  w-full h-12 rgb-button bg-gradient-to-r from-indigo-800 to-amber-400 text-white px-8 py-2 text-xl rounded font-medium focus:ring ring-black ring-opacity-10 gradient element-to-rotate '>Cancel</button>
           </div>
         </form>
       </div>

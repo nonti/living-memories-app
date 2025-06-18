@@ -2,7 +2,7 @@ import Carousel from '../components/Carousel';
 import { images } from '../data';
 const Gallery = () => {
   return (
-    <section className=''> 
+    <section className='' id='gallery'> 
       <div className='mx-auto max-w-6xl px-4 sm:px-6 lg:px-8'> 
         <h1 className='text-center text-amber-300 text-5xl font-bold mb-8'>Gallery</h1>
         <Carousel images={images}/>
