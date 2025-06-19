@@ -9,11 +9,14 @@ import Team from './pages/Team'
 import Testimonial from './pages/Testimonial'
 import Login from './pages/auth/Login'
 import Dashboard from './components/Dashboard'
+import { ToastContainer,  } from 'react-toastify';
+import ProtectedRoute from './components/ProtectedRoute'
 
 const App = () => {
 
   return (
     <>
+    <ToastContainer/>
      <Routes>
       <Route path='/login' element={<Login/>}/>
         <Route path='/' element={ 
@@ -51,7 +54,14 @@ const App = () => {
             <Testimonial/>
           </Layout>
         }/>
-        <Route path='/admin/dashboard' element={<Dashboard/>}/>
+        {/**Proetcted route for admin */}
+        <Route element={<ProtectedRoute allowedRoles={['admin']}/>}>
+          <Route path='/admin/dashboard' element={<Dashboard/>}/>
+        </Route>
+          {/**Proetcted route for user */}
+         <Route element={<ProtectedRoute allowedRoles={['user']}/>}>
+          <Route path='/user/profile' element={<Dashboard/>}/>
+        </Route>
      </Routes>
     </>
   )

@@ -53,7 +53,7 @@ const Members = () => {
         <form className='max-w-sm mx-auto flex flex-col gap-4 mt-8'>
           <div className='flex'>
             <span className='inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border border-e-0 border-gray-300 rounded-s-md dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600'>
-              <FaRegCircleUser />
+              <FaRegCircleUser className='text-amber-400'/>
             </span>
             <input
               type='text'
@@ -63,7 +63,7 @@ const Members = () => {
           </div>
           <div className='flex'>
             <span className='inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border border-e-0 border-gray-300 rounded-s-md dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600'>
-              <FaRegCircleUser />
+              <FaRegCircleUser className='text-amber-400'/>
             </span>
             <input
               type='text'
@@ -73,7 +73,7 @@ const Members = () => {
           </div>
           <div className='flex'>
             <span className='inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border border-e-0 border-gray-300 rounded-s-md dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600'>
-              <GoNumber />
+              <GoNumber className='text-amber-400'/>
             </span>
             <input
               type='text'
@@ -83,7 +83,7 @@ const Members = () => {
           </div>
           <div className='flex'>
             <span className='inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border border-e-0 border-gray-300 rounded-s-md dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600'>
-              <CiCalendarDate />
+              <CiCalendarDate className='text-amber-400'/>
             </span>
             <input
               type='date'

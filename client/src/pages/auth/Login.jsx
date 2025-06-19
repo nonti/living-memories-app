@@ -1,12 +1,42 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { FcGoogle } from 'react-icons/fc';
 import logo from '../../assets/logo.png';
 import { Link, useNavigate } from 'react-router-dom';
+import { useAuth } from '../../context/AuthContext';
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css"
 const Login = () => {
   const navigate = useNavigate();
-  const handleSubmit = (e) => {
+  const [formData, setFormData] = useState({
+    email:'',
+    password: ''
+  });
+  const { login, loading, isLoggedIn} = useAuth();
+
+  useEffect(() =>{
+    if(isLoggedIn && !loading){
+    navigate('/admin/dashboard', { replace: true})
+  }
+
+  } ,[navigate, loading, isLoggedIn])
+  
+  const handleOnChange = (e) => {
+    setFormData(prevFormData => ({
+    ...prevFormData,
+    [e.target.name]: e.target.value
+  }));
+  }
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    navigate('/dashboard')
+    try{
+      await login(formData)
+      console.log(formData)
+      toast.success('Loggied in sucessfully')
+    }catch(e){
+      console.error('Login error:', e.message);
+      toast.error('Invalid credentials')
+    }
   }
 
   return (
@@ -27,15 +57,20 @@ const Login = () => {
           <form onSubmit={handleSubmit}>
           <div className='py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7'>
             <div className='relative'>
-              <input autocomplete='off' id='email' name='email' type='text' className='text-lg peer-placeholder-shown:text-base peer-placeholder-shown:text-white peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-white peer-focus:text-lg h-10 w-full border-b-2 border-gray-300 text-white focus:outline-none focus:borer-rose-600' placeholder='Email' />
+              <input id='email' name='email' value={formData.email}  onChange={handleOnChange} type='text' 
+               disabled={loading}
+              className='text-lg peer-placeholder-shown:text-base peer-placeholder-shown:text-white peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-white peer-focus:text-lg h-10 w-full border-b-2 border-gray-300 text-white focus:outline-none focus:borer-rose-600' placeholder='Email' />
             </div>
             <div className='relative'>
-              <input autocomplete='off' id='password' name='password' type='password' className=' text-lg peer-placeholder-shown:text-base peer-placeholder-shown:text-white peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-white peer-focus:text-lg h-10 w-full border-b-2 border-gray-300 text-white focus:outline-none focus:borer-rose-6000' placeholder='Password' />
+              <input id='password' name='password' value={formData.password} onChange={handleOnChange} type='password' 
+               disabled={loading}
+              className=' text-lg peer-placeholder-shown:text-base peer-placeholder-shown:text-white peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-white peer-focus:text-lg h-10 w-full border-b-2 border-gray-300 text-white focus:outline-none focus:borer-rose-6000' placeholder='Password' />
              
             </div>
             <div className='relative'>
-              <button className='inline-flex items-center justify-center w-full h-12 rgb-button bg-gradient-to-r from-indigo-800 to-amber-400 text-white px-8 py-2 text-xl rounded font-medium focus:ring ring-black ring-opacity-10 gradient element-to-rotate '
-                >Sign in </button>
+              <button type='submit' disabled={loading}
+              className='inline-flex items-center justify-center w-full h-12 rgb-button bg-gradient-to-r from-indigo-800 to-amber-400 text-white px-8 py-2 text-xl rounded font-medium focus:ring ring-black ring-opacity-10 gradient element-to-rotate '
+                >{loading ? 'Logging in...' : 'Login'} </button>
             </div>
           </div>
           </form>

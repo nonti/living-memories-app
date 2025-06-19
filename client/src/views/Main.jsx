@@ -1,9 +1,11 @@
 import React from 'react'
 import { CiMenuKebab } from "react-icons/ci";
-import profile from '../assets/profile.png';
 import { PiStandardDefinition } from "react-icons/pi";
-import { MdOutlineCalendarMonth,MdNotificationsNone,MdMailOutline, MdOutlineWorkspacePremium, MdOutlineMiscellaneousServices, MdOutlineAvTimer, MdOutlineReviews } from "react-icons/md";
-import Chart from '../components/Chart';
+import { 
+  MdOutlineWorkspacePremium, MdOutlineMiscellaneousServices, MdOutlineAvTimer, MdOutlineReviews } from "react-icons/md";
+import Chart from '../components/charts/Chart';
+import PieChart from '../components/charts/PieChart';
+import DashboardHeader from '../components/DashboardHeader';
 
 const Main = () => {
   return (
@@ -11,13 +13,7 @@ const Main = () => {
       <section className='w-auto md:w-[70%] h-full'>
         <div className='w-full flex items-center justify-between'>
           <div className='text-amber-300 m-4 font-bold text-md md:text-2xl dark:text-transparent bg-clip-text dark:bg-gradient-to-tl from-indigo-900 to-amber-400'>
-            Good day, Lok at you account
-          </div>
-          <div className='md:hidden flex gap-4 items-center justify-end px-4 text-amber-400'>
-            <MdOutlineCalendarMonth/>
-            <MdNotificationsNone/>
-            <MdMailOutline/>
-            <img src={profile} alt='Profile image' className='w-8 h-8 rounded-full'/>
+            Oversight
           </div>
         </div>
         <div className='grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 m-4'>
@@ -31,10 +27,10 @@ const Main = () => {
               </div>
             </div>
             <div className='font-extrabold text-4xl sm:text-2xl lg:text-xl text-slate-300 '>
-                10K
+                10K+
               </div>
               <div className='text-slate-300 text-sm'>
-                Premium Subscription
+                Premium Plans
               </div>
             </div>
             <div className='flex flex-col justify-between w-full md:w-auto h-48 bg-slate-900/50 p-4 rounded-md'>
@@ -47,10 +43,10 @@ const Main = () => {
               </div>
             </div>
             <div className='font-extrabold text-4xl sm:text-2xl lg:text-xl text-slate-300 '>
-                15K
+                15K+
               </div>
               <div className='text-slate-300 text-sm'>
-                Standard Subscriptions
+                Standard Plans
               </div>
             </div>
             <div className='flex flex-col justify-between w-full md:w-auto h-48 bg-slate-900/50 p-4 rounded-md'>
@@ -109,71 +105,40 @@ const Main = () => {
             </div>
           </div>
         </div>
-        <div className='m-4'>
-          <div className='text-amber-500 font-bold text-xl'>Recent Transactions</div>
-          <table className='w-full text-sm text-left '>
-            <thead className='text-xs text-slate-400 uppercase bg-slate-900/50'>
-              <tr>
-                <th scope='col' className='py-3 px-6'>
-                  Person
-                </th>
-                 <th scope='col' className='py-3 px-6'>
-                  Bank Account
-                </th>
-                 <th scope='col' className='py-3 px-6'>
-                  Amount
-                </th>
-              </tr>
-            </thead>
-            <tbody className='text-slate-400'>
-              <tr className='bg-slate-900/50 border-b'>
-                <td className='py-4 px-6'>
-                  John Doe
-                </td>
-                <td className='py-4 px-6'>
-                  985423657
-                </td>
-                <td className='py-4 px-6'>
-                  R450000.00
-                </td>
-              </tr>
-               <tr className='bg-slate-900/50 border-b'>
-                <td className='py-4 px-6'>
-                  John Doe
-                </td>
-                <td className='py-4 px-6'>
-                  985423657
-                </td>
-                <td className='py-4 px-6'>
-                  R450000.00
-                </td>
-              </tr>
-               <tr className='bg-slate-900/50 border-b'>
-                <td className='py-4 px-6'>
-                  John Doe
-                </td>
-                <td className='py-4 px-6'>
-                  985423657
-                </td>
-                <td className='py-4 px-6'>
-                  R450000.00
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <div className='grid md:grid-cols-4 gap-4 m-4 w-auto'>
+          <div className='col-span-4 md:col-span-1  h-28 bg-white dark:bg-slate-900/50 rounded-md'>
+            <div className='flex flex-col  justify-between p-4 h-full'>
+              <div className='font-semibold text-indigo-950 dark:text-slate-400'>New Clients</div>
+              <div className='flex items-center justify-between w-full'>
+                <div className='text-5xl sm:text-xl md:text-xl lg:text-5xl font-bold text-indigo-950 dark:text-slate-400'>78</div>
+                <div className='flex px-2 py-1 text-xs rounded-full bg-green-500 items-center justify-center text-green-900'>+69%</div>
+              </div>
+            </div>
+          </div>
+         <div className='col-span-4 md:col-span-3 row-span-2 bg-white dark:bg-slate-900/50'>
+            <PieChart/>
+          </div>
+          <div className='col-span-4 md:col-span-1  h-28 bg-white dark:bg-slate-900 rounded-md'>
+            <div className='flex flex-col  justify-between p-4 h-full'>
+              <div className='font-semibold text-indigo-950 dark:text-slate-400'>Invoice Overdue</div>
+              <div className='flex items-center justify-between w-full'>
+                <div className='text-5xl font-bold text-indigo-950 dark:text-slate-400'>19</div>
+                <div className='flex px-2 py-1 text-xs rounded-full bg-red-500 items-center justify-center text-red-900 dark:text-slate-400'>19%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>          
         </div>
       </section>
       <section className='w-full md:w-[30%] bg-indigo-950/20'>
-      <div className='flex flex-col m-4'>
-         <div className='hidden md:flex gap-4 items-center justify-end px-4 text-amber-400'>
-            <MdOutlineCalendarMonth/>
-            <MdNotificationsNone/>
-            <MdMailOutline/>
-            <img src={profile} alt='Profile image' className='w-8 h-8 rounded-full'/>
+      <div className='flex flex-col m-'>
+         <div className='hidden md:flex justify-end'> {/* Ensure this wraps DashboardHeader if it should appear only on md screens and up */}
+             <DashboardHeader />
           </div>
-          <div className="flex flex-col bg-slate-900/50 gap-6 p-4 m-4 rounde-md h-auto shadow-lg">
+          <div className="flex flex-col bg-slate-900/50 gap-6 p-4 m-4 rounded-md h-auto shadow-lg">
             <div>
-              <div className='font-bold text-amber-400'>Formation</div>
+              <div className='font-bold text-amber-400'>Retrieval Information</div>
               <div className='text-xs font-bold text-amber-500'>In progress</div>
             </div>
             <div className='h-4 w-full bg-gray-200 rounded-lg'>
@@ -183,7 +148,7 @@ const Main = () => {
               <div className='font-bold text-slate-400'>
                 Estimated Processing
               </div>
-              <div className='font-semibold text-slate-400'>5-5 business days</div>
+              <div className='font-semibold text-slate-400'>1-5 business days</div>
             </div>
             <div className=''>
               <button className="bg-gradient-to-tr from-inidigo-600 to-amber-500 text-slate-400 rounded-xl p-4 w-full">View status</button>
@@ -195,7 +160,7 @@ const Main = () => {
               <MdOutlineAvTimer/>
               </div>
               <div className=''>
-                <div className='font-semibold text-sm'>Run payroll</div>
+                <div className='font-semibold text-sm'>Run vigil</div>
                 <div className='text-indigo-500 text-xs'>March 7th at 4:50Pm</div>
               </div>
             </div>
@@ -204,7 +169,7 @@ const Main = () => {
               <MdOutlineAvTimer/>
               </div>
               <div>
-                <div className='font-semibold text-sm'>Run payroll</div>
+                <div className='font-semibold text-sm'>Run vigil</div>
                 <div className='text-indigo-500 text-xs'>March 7th at 4:50Pm</div>
               </div>
             </div>
@@ -213,7 +178,7 @@ const Main = () => {
               <MdOutlineAvTimer/>
               </div>
               <div>
-                <div className='font-semibold  text-sm'>Run payroll</div>
+                <div className='font-semibold  text-sm'>Run vigil</div>
                 <div className='text-indigo-500 text-xs'>March 7th at 4:50Pm</div>
               </div>
             </div>
@@ -222,7 +187,7 @@ const Main = () => {
               <MdOutlineAvTimer/>
               </div>
               <div>
-                <div className='font-semibold  text-sm'>Run payroll</div>
+                <div className='font-semibold  text-sm'>Run vigil</div>
                 <div className='text-indigo-500 text-xs'>March 7th at 4:50Pm</div>
               </div>
             </div>
