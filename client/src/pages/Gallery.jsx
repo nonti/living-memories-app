@@ -10,46 +10,49 @@ const Gallery = () => {
           <div className='grid grid-cols-2 md:grid-cols-4 gap-4'> 
             <div className='grid gap-4'>
               <div>
-                <img className='h-auto w-full rounded-lg' src='https://scontent-jnb2-1.xx.fbcdn.net/v/t39.30808-6/498138260_1902359097235082_8569476965861924008_n.jpg?stp=dst-jpg_p526x395_tt6&_nc_cat=109&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=SXoU3hEtaU4Q7kNvwGnxWr1&_nc_oc=AdnYyT_w32-b706Ril46Xe3NCPkd26OF9ajCdM1PVfgVWbHOFXh4gAoiW4nIqm6gm2U&_nc_zt=23&_nc_ht=scontent-jnb2-1.xx&_nc_gid=9b3M38J9sCBgXkArPWhPGA&oh=00_AfKIgAuCGyv-M6oo7FC9hilmIIDW2b6iAlAgBhlwmTOkQg&oe=6843EF56' alt=''/>
+                <img className='h-auto w-full rounded-lg' src='https://scontent-jnb2-1.xx.fbcdn.net/v/t39.30808-6/489012096_1232769262181887_5772095266079916033_n.jpg?stp=dst-jpg_p526x395_tt6&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=-Wq0ZjV6YisQ7kNvwGPkBEF&_nc_oc=AdnDiGiDw2HEZZDdhDnNx-zygM19AbPGp9bOzakpS1GYTiKK7vGu-SuhcQs_54sfQc4&_nc_zt=23&_nc_ht=scontent-jnb2-1.xx&_nc_gid=edi23HwQpq50xRxaKUMAXw&oh=00_AfNj4pjAKz7uvl84MMBPde5AGr7-zao0BoHnuTCv3o0ayA&oe=6859E48D' alt=''/>
               </div>
               <div>
-                <img className='h-auto w-full rounded-lg' src='https://scontent-jnb2-1.xx.fbcdn.net/v/t39.30808-6/498586625_1902359533901705_1494575735667969237_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=HR3uiUwXLOQQ7kNvwFgEI6L&_nc_oc=AdmFyTuIxxWqjBYU9BPpjU78VuT9zzLWz9PnNPPJdmaZLuB8KSjD2cEWyOaLKqz6W2c&_nc_zt=23&_nc_ht=scontent-jnb2-1.xx&_nc_gid=9b3M38J9sCBgXkArPWhPGA&oh=00_AfItGLL0BqIvrki0U6-fSS3F1QuTmlwHLs7uabY8ysRIyA&oe=6843FA9D' alt=''/>
+                <img className='h-auto w-full rounded-lg' src='https://scontent-jnb2-1.xx.fbcdn.net/v/t39.30808-6/487859129_1232769325515214_6859865468184937739_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=EhAJoodZWv8Q7kNvwFGl07r&_nc_oc=AdluR3FGKRhZpIIyAZje8J6LjhzqWHzfcF5M_WmkqCPuqPNN8snlhLWnqR_phaQBbXc&_nc_zt=23&_nc_ht=scontent-jnb2-1.xx&_nc_gid=vu0AMqLSWjQo5y236F86bA&oh=00_AfPrsGAF2EK0a0K9f21TeAaB9m1xRceDiYKhMaF2ssgMVQ&oe=685A0188' alt=''/>
               </div>
               <div>
-                <img className='h-auto w-full rounded-lg' src='https://scontent-jnb2-1.xx.fbcdn.net/v/t39.30808-6/498592837_1902359160568409_5937085734256340912_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=5UIJqhmHht4Q7kNvwFOpShi&_nc_oc=AdmU_0A6RUYbGNZBLvKJlfTKjYqGe_hx5lGzpO8-j0UssJgVfy51ugs-3PajFUvPuvQ&_nc_zt=23&_nc_ht=scontent-jnb2-1.xx&_nc_gid=6RWaVkXncrGYrcQgyPvVpg&oh=00_AfKOtmnuFaqH6hmDJrwonN2hgmqBBKF0KtygH_gnUiDobA&oe=6843E2B1' alt=''/>
-              </div>
-            </div>
-            <div className='grid gap-4'>
-              <div>
-                <img className='h-auto w-full rounded-lg' src='https://scontent-jnb2-1.xx.fbcdn.net/v/t39.30808-6/498024291_1902359307235061_3177347733252653078_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=YXLAQOsDgcwQ7kNvwHtiAL7&_nc_oc=AdldprJk2ary5woBzUvwS-XZ7EdW8tmeLcbN85CxGA4i7OH3C-YbaF096Ah_XvhfnR8&_nc_zt=23&_nc_ht=scontent-jnb2-1.xx&_nc_gid=6nP5nm3Dz8s9pb_G5HWKuA&oh=00_AfJ3OumoFtSNqvfmN-PBX22WANOIGKbn8Z3zcc-WQooJ-w&oe=6843F729' alt=''/>
-              </div>
-              <div>
-                <img className='h-auto w-full rounded-lg' src='https://scontent-jnb2-1.xx.fbcdn.net/v/t39.30808-6/499516770_1902359407235051_1277799972253437587_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=ftLa1sw542oQ7kNvwExBCg2&_nc_oc=AdlTuZ9iEVuGXAFDE_KoVAqKb2uYvUW9iuEdNZ-igCvpDfltdbEeGdl8nXhXwAHRvEQ&_nc_zt=23&_nc_ht=scontent-jnb2-1.xx&_nc_gid=MQxpnavonZpoi3HsRIx8HQ&oh=00_AfLFW1T0GcUH_p1eG1k_Rw6mdIuOAw8rIVP9EStcjDTuOg&oe=6844104E' alt=''/>
-              </div>
-              <div>
-                <img className='h-auto w-full rounded-lg' src='https://scontent-jnb2-1.xx.fbcdn.net/v/t39.30808-6/498322119_1902359770568348_5031365209244967306_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=W3j_EurLZeAQ7kNvwFBfHqX&_nc_oc=AdmlxoclCR7TIKMpxtWWOmNx8G6Q9_uPQaedkvzBopEz96nXVWS0Le27jL7eLIu_Yk8&_nc_zt=23&_nc_ht=scontent-jnb2-1.xx&_nc_gid=9xkeWhaTzZ6qr3A4sRHYaw&oh=00_AfIwVARIEA_wTOPZjS5hO7GAf5Yuf327EQ_8K0hANQIVag&oe=6843F3CE' alt=''/>
+                <img className='h-auto w-full rounded-lg' src='https://scontent-jnb2-1.xx.fbcdn.net/v/t39.30808-6/489026459_1232769422181871_1992687348663400617_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=YrtpQOS1jd8Q7kNvwGv2574&_nc_oc=AdmJAEh2ek-3FRdvMDSzbxXLRwWl_P1OeOGLhtUL8qMfbwUFY8zz3RV6ifF_CJPS4Wg&_nc_zt=23&_nc_ht=scontent-jnb2-1.xx&_nc_gid=DLJVsNdPcngAkq0wj3L0xA&oh=00_AfNnQeUFT_Fe4Tl5f5YIDfNwTrc6YMB8XKWw6qUdBeu5Tg&oe=6859DB17' alt=''/>
               </div>
             </div>
             <div className='grid gap-4'>
               <div>
-                <img className='h-auto w-full rounded-lg' src='https://scontent-jnb2-1.xx.fbcdn.net/v/t39.30808-6/487426672_1228217505970396_27943777018095230_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=a_nHTxLMZBcQ7kNvwFeRfa8&_nc_oc=AdndmusactenchgT7j4JZFgUKAz5Ekz33LjXsnJXoGvBV6XUv5OFqP0dbKi9EgtpWAA&_nc_zt=23&_nc_ht=scontent-jnb2-1.xx&_nc_gid=P6hdy5zmbGE2yMZ2TSbw6A&oh=00_AfKkTCp09FWoiMOdUbgTB6Cy19S1I6GpIcx3eLLK_NLj9Q&oe=684411BF' alt=''/>
+                <img className='h-auto w-full rounded-lg' src='https://scontent-jnb2-1.xx.fbcdn.net/v/t39.30808-6/493276707_1254213700037443_2048642583972519507_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Shq99jt0s1QQ7kNvwFuBNvl&_nc_oc=AdmlF7H8adbutEsocwVGYAlzUdvyyr-rkxZbUiFGpTGxxGIzcXCOyBrSQp9PnFNF_rc&_nc_zt=23&_nc_ht=scontent-jnb2-1.xx&_nc_gid=5fX21ALNQeEC5r7M8qZzqg&oh=00_AfPFSdHmfiJU6eeCYr6a1QdLCMnG0rCpLJm8TydrwXlo5Q&oe=6859DCC8' alt=''/>
               </div>
               <div>
-                <img className='h-auto w-full rounded-lg' src='hhttps://scontent-jnb2-1.xx.fbcdn.net/v/t39.30808-6/487401307_1228217812637032_175173510952783567_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=JA5a39IXAtwQ7kNvwFk5w3V&_nc_oc=AdlXYM1k2Tygx8nvu26Ucop58O8H6Axk0AeqtLCG5L28Rqmnnb83_h8Cyor5NAfLcM0&_nc_zt=23&_nc_ht=scontent-jnb2-1.xx&_nc_gid=nrmf1f0O0kYlbJkPXZXqIg&oh=00_AfKytttPn7dsptcZRMfAV7S33i0-3Hon_wIT1KK9AfjWHA&oe=684401DC' alt=''/>
+                <img className='h-auto w-full rounded-lg' src='https://scontent-jnb2-1.xx.fbcdn.net/v/t39.30808-6/506450351_1350851860383721_516139854485831297_n.jpg?stp=dst-jpg_p526x395_tt6&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=v1KLyxgB7ZUQ7kNvwEsaA-s&_nc_oc=Adm8xiwAYxW828BcDo5Vr7Kn0YKCNk04g4JTYDEz5fTz7OSYviDywwcS9njgAg3DVZU&_nc_zt=23&_nc_ht=scontent-jnb2-1.xx&_nc_gid=qK7rwRXLsa1NYAo352W0SA&oh=00_AfPgsRemiwvATgKN41QVP_UmebUY-imYoDADnC_yoJ-UjQ&oe=6859E1A0' alt=''/>
               </div>
               <div>
-                <img className='h-auto w-full rounded-lg' src='https://scontent-jnb2-1.xx.fbcdn.net/v/t39.30808-6/487437816_1228450039280476_2052476591985519428_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=amIpkRfABZwQ7kNvwE82am-&_nc_oc=Adl04CBOLCf6St8_9vYMNStdS_Jas54tSoiyz0NkucmZsrjKHvHSeSnfQsDDuiKfbgA&_nc_zt=23&_nc_ht=scontent-jnb2-1.xx&_nc_gid=9ZyZPwZo5uCX0KMq0J9jWw&oh=00_AfJmyU-3qHZGFiqia2DIf21N6g_pWz8b0N3g8AtybuYcTQ&oe=6843E733' alt=''/>
+                <img className='h-auto w-full rounded-lg' src='https://scontent-jnb2-1.xx.fbcdn.net/v/t39.30808-6/494035201_1255864063205740_8144457171819880918_n.jpg?stp=cp6_dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Qwph8hhfJ1MQ7kNvwHkXSjT&_nc_oc=Adm-qiuwaRZ7p5V1DS_197WtgKgQ7hQbE49dMx6Po6GEr6RY4zbIPD4Raru_-gy7WJk&_nc_zt=23&_nc_ht=scontent-jnb2-1.xx&_nc_gid=alvTDAdu6pytykhC7Nxzbw&oh=00_AfMRHlDvmxu1GMk7PgZ2PpB3R3mTHK87BXf22mgHVqCDHw&oe=6859D635' alt=''/>
               </div>
             </div>
             <div className='grid gap-4'>
               <div>
-                <img className='h-auto w-full rounded-lg' src='https://scontent-jnb2-1.xx.fbcdn.net/v/t39.30808-6/503518577_4229733577259030_2028923441423740277_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=bVf_Ujw0sVQQ7kNvwGCCgs-&_nc_oc=AdmPWoSB8-J2ql6aO_uFD0f31AS3DuUYgBarHxb4U_oTqfv2ZemZDtaX7D5LLFiCbaw&_nc_zt=23&_nc_ht=scontent-jnb2-1.xx&_nc_gid=vhFH_6wJB0apdNenby7SMQ&oh=00_AfL66xLVgP47tDUgHYiSvK0Ib6ubDE5tap13_0mJKyuwKA&oe=6843DF72' alt=''/>
+                <img className='h-auto w-full rounded-lg' src='https://scontent-jnb2-1.xx.fbcdn.net/v/t39.30808-6/492010605_1250527537072726_2121185597923271364_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=cnq0SOu5B5EQ7kNvwFhvjcj&_nc_oc=Adkp-BVULxiFFdHuAezII2yHhbOl4f1l_Uiaqp3bYlpYz5e14U4bxYTIMndAodaMFeE&_nc_zt=23&_nc_ht=scontent-jnb2-1.xx&_nc_gid=cMRLgdjcxIP5wakDx3Nw0A&oh=00_AfOWClyIHqaeY5Ut7Hh5AdyQrAxQNhy1W8etRKutHiTBOg&oe=6859F7D7' alt=''/>
               </div>
               <div>
-                <img className='h-auto w-full rounded-lg' src='https://scontent-jnb2-1.xx.fbcdn.net/v/t39.30808-6/503518577_4229733577259030_2028923441423740277_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=bVf_Ujw0sVQQ7kNvwGCCgs-&_nc_oc=AdmPWoSB8-J2ql6aO_uFD0f31AS3DuUYgBarHxb4U_oTqfv2ZemZDtaX7D5LLFiCbaw&_nc_zt=23&_nc_ht=scontent-jnb2-1.xx&_nc_gid=vhFH_6wJB0apdNenby7SMQ&oh=00_AfL66xLVgP47tDUgHYiSvK0Ib6ubDE5tap13_0mJKyuwKA&oe=6843DF72' alt=''/>
+                <img className='h-auto w-full rounded-lg' src='https://scontent-jnb2-1.xx.fbcdn.net/v/t39.30808-6/494139743_1255864413205705_6958551545068906880_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=4ev1zWaaYzMQ7kNvwHNTUWW&_nc_oc=Adl_hB6JJVaKzDGwAIDdMIRE7sdd8_UHWW7I7gpS5VSu8HAek1JoP0lG5GaRK2xTFko&_nc_zt=23&_nc_ht=scontent-jnb2-1.xx&_nc_gid=aTloBTD9TsK3t8BNHgUaGQ&oh=00_AfOMS1_tRgBJu7rv9DznfNHriLoe2tttd5ngqRDKxJFc1Q&oe=6859EA33' alt=''/>
+
               </div>
               <div>
-                <img className='h-auto w-full rounded-lg' src='https://scontent-jnb2-1.xx.fbcdn.net/v/t39.30808-6/482227258_1210025761122904_4099468045873989183_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=MWhUj09ewuYQ7kNvwHSw8Nt&_nc_oc=AdlXyQfL9yS7Is_dnwkcrRIl2BoKTSSwJbRZ3UWtuQdMyaIU_6XfqHd8wANWgrODsAQ&_nc_zt=23&_nc_ht=scontent-jnb2-1.xx&_nc_gid=T0reLP0p4AeU-qx8O23AYA&oh=00_AfIUo-9JfDM7CpzWnKYjEyI-dgoQp0wcCNtEilZcxnIKLw&oe=6843EF34' alt=''/>
+                <img className='h-auto w-full rounded-lg' src='https://scontent-jnb2-1.xx.fbcdn.net/v/t39.30808-6/488170494_1228659445926202_936225644317704747_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=wVqOYuJ4WIAQ7kNvwHs4D7T&_nc_oc=AdkQNpFuEj0YeEDUS7LdvFOhMRvr134DouseyCIQm4tDC9uM8Q6mCirwbYuMSjZbtmM&_nc_zt=23&_nc_ht=scontent-jnb2-1.xx&_nc_gid=MrHB3ZyTZAN3tDjoZiNPag&oh=00_AfN4GXHIrwdo1GxFjSxBzl9vZT4xR8O-94aC8aOvVFh1Lw&oe=6859E6E7' alt=''/>
+              </div>
+            </div>
+            <div className='grid gap-4'>
+              <div>
+                <img className='h-auto w-full rounded-lg' src='https://scontent-jnb2-1.xx.fbcdn.net/v/t39.30808-6/494256309_1255864426539037_2585951979688101461_n.jpg?stp=cp6_dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=gPE3ACZhCUMQ7kNvwFotucz&_nc_oc=AdldfKyN6E_veWa72q3gjPiNqss60sDuV1N9ZmSWrB0p2XruyAmR0yH5iHVMQZKLc9k&_nc_zt=23&_nc_ht=scontent-jnb2-1.xx&_nc_gid=alvTDAdu6pytykhC7Nxzbw&oh=00_AfPuipI3b3ahW2Vb_KcK0h_8r2xsOH2f46St8aJrsWqXGw&oe=6859D119' alt=''/>
+                
+              </div>
+              <div>
+                <img className='h-auto w-full rounded-lg' src='https://scontent-jnb2-1.xx.fbcdn.net/v/t39.30808-6/476916822_4110951292470593_1787594916794780842_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=59_k60nOA5MQ7kNvwHjaytK&_nc_oc=AdltKcD7suRMKQzZtMjmaQ5VB5OEwFTiK87-gpAEilU9zLH-n-n2ThOk9SugAzK8Nck&_nc_zt=23&_nc_ht=scontent-jnb2-1.xx&_nc_gid=G_0N7WmYVlnhN0tY6QOtfQ&oh=00_AfOEPr1KtkUoVzVrApKEtSQ7OEhPpGb0PROSCpWbDG04Eg&oe=6859FC1A' alt=''/>
+              </div>
+              <div>
+                <img className='h-auto w-full rounded-lg' src='https://scontent-jnb2-1.xx.fbcdn.net/v/t39.30808-6/482346930_1210025734456240_6895319643852812093_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=7u6RFwMlFW4Q7kNvwFBvoJ-&_nc_oc=Adn_MxNqcQvcku52N9A1tI6iwg_9rHSFgT1TIE2G9yUxBmjk1i609NTYYTsJ_xFYrGY&_nc_zt=23&_nc_ht=scontent-jnb2-1.xx&_nc_gid=WNXPL6j9TQdp_k7OMzleuA&oh=00_AfNPMdbmxMnaQ8UYW3jhfRB7XqUsG_k6GaP0IZWleuTjIA&oe=685A089A' alt=''/>
+
               </div>
             </div>
           </div>
