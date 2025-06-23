@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import Modal from '../components/Modal';
-import { CiMenuKebab } from "react-icons/ci";
+import { CiMenuKebab } from 'react-icons/ci';
 import ImageModal from '../components/ImageModal'
 import { IoLocationOutline } from 'react-icons/io5';
-import { FiEdit } from "react-icons/fi";
-import {   MdOutlinePolicy, } from "react-icons/md";
+import { FiEdit } from 'react-icons/fi';
+import {   MdOutlinePolicy, } from 'react-icons/md';
 
 const Profile = () => {
   const [showModal, setShowModal] = useState(false);
@@ -96,8 +96,8 @@ const Profile = () => {
 
       {/* Edit Data Modal */}
       {showModal && <Modal onClose={closeModal}>
-        <div className="p-4">
-          <h2 className="text-xl font-semibold mb-4">Edit Your Data</h2>
+        <div className='p-4'>
+          <h2 className='text-xl font-semibold mb-4'>Edit Your Data</h2>
           {/* Add edit form here */}
         </div>
       </Modal>}

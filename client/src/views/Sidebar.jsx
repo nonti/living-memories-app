@@ -4,7 +4,7 @@ import { MdOutlineDashboard,MdOutlineSettings } from 'react-icons/md';
 import { FaRegUserCircle } from 'react-icons/fa';
 import { GrGroup, GrTransaction, GrPerformance } from 'react-icons/gr';
 import { Link } from 'react-router-dom';
-import { TbLogout2 } from "react-icons/tb";
+import { TbLogout2 } from 'react-icons/tb';
 import { useAuth } from '../context/AuthContext';
 
 const Sidebar = ({onMembersClick, onProfileClick,  onTransactionsClick, onDashboardClick, userRole, currentActiveTab }) => {

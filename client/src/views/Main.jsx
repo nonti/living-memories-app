@@ -1,8 +1,8 @@
 import React from 'react'
-import { CiMenuKebab } from "react-icons/ci";
-import { PiStandardDefinition } from "react-icons/pi";
+import { CiMenuKebab } from 'react-icons/ci';
+import { PiStandardDefinition } from 'react-icons/pi';
 import { 
-  MdOutlineWorkspacePremium, MdOutlineMiscellaneousServices, MdOutlineAvTimer, MdOutlineReviews } from "react-icons/md";
+  MdOutlineWorkspacePremium, MdOutlineMiscellaneousServices, MdOutlineAvTimer, MdOutlineReviews } from 'react-icons/md';
 import Chart from '../components/charts/Chart';
 import PieChart from '../components/charts/PieChart';
 import DashboardHeader from '../components/DashboardHeader';
@@ -136,7 +136,7 @@ const Main = () => {
          <div className='hidden md:flex justify-end'> {/* Ensure this wraps DashboardHeader if it should appear only on md screens and up */}
              <DashboardHeader />
           </div>
-          <div className="flex flex-col bg-slate-900/50 gap-6 p-4 m-4 rounded-md h-auto shadow-lg">
+          <div className='flex flex-col bg-slate-900/50 gap-6 p-4 m-4 rounded-md h-auto shadow-lg'>
             <div>
               <div className='font-bold text-amber-400'>Retrieval Information</div>
               <div className='text-xs font-bold text-amber-500'>In progress</div>
@@ -151,7 +151,7 @@ const Main = () => {
               <div className='font-semibold text-slate-400'>1-5 business days</div>
             </div>
             <div className=''>
-              <button className="bg-gradient-to-tr from-inidigo-600 to-amber-500 text-slate-400 rounded-xl p-4 w-full">View status</button>
+              <button className='bg-gradient-to-tr from-inidigo-600 to-amber-500 text-slate-400 rounded-xl p-4 w-full'>View status</button>
             </div>
           </div>
             <div className='flex flex-col gap-5 m-4 text-indigo-900 dark:text-slate-400  '>

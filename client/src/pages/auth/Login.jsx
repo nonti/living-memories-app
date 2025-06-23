@@ -3,8 +3,8 @@ import { FcGoogle } from 'react-icons/fc';
 import logo from '../../assets/logo.png';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
-import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css"
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'
 const Login = () => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
