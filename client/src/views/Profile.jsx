@@ -81,7 +81,7 @@ const Profile = () => {
                   </div>
               </div>
             </div>
-
+            <div className="flex items-center gap-3 justify-center">
             <button
               onClick={toggleModal}
               type='button'
@@ -90,6 +90,15 @@ const Profile = () => {
               <FiEdit/>
               Edit 
             </button>
+             <button
+              onClick={toggleModal}
+              type='button'
+              className='inline-flex gap-2 items-center justify-center h-12 rgb-button bg-gradient-to-r from-indigo-800 to-amber-400 text-white px-8 py-2 text-xl rounded font-medium focus:ring ring-black ring-opacity-10'
+            >
+              <FiEdit/>
+              Log a claim 
+            </button>
+            </div>
           </div>
         </div>
       </div>

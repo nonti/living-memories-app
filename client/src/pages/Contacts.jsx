@@ -1,5 +1,5 @@
 import React from 'react'
-import {locationsData } from '../data'; // Import your data
+import {locationsData } from '../data'; 
 import LocationCard from '../components/LocationCard';
 const Contacts = () => {
 
@@ -53,7 +53,7 @@ const Contacts = () => {
 
       {/* Location Cards */}
       <div>
-        <div className='grid grid-cols-1 gap-8 sm:grid-cols-2 px-4'>
+        <div className='grid grid-cols-1 gap-8 sm:grid-cols-2'>
           {locationsData.map((location) => (
             <LocationCard key={location.id} location={location} />
           ))}
