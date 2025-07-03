@@ -11,6 +11,7 @@ import Login from './pages/auth/Login'
 import Dashboard from './components/Dashboard'
 import { ToastContainer,  } from 'react-toastify';
 import ProtectedRoute from './components/ProtectedRoute'
+import MemberForm from './components/MemberForm'
 
 const App = () => {
 
@@ -19,7 +20,8 @@ const App = () => {
     <ToastContainer/>
      <Routes>
       <Route path='/login' element={<Login/>}/>
-        <Route path='/' element={ 
+      <Route path='/register' element={<MemberForm/>}/>
+      <Route path='/' element={ 
           <Layout>
             <Home/>
           </Layout>
